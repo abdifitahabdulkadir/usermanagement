@@ -64,9 +64,8 @@ export const columns: ColumnDef<Users>[] = [
     accessorKey: "updatedAt",
     header: "UpdatedAt",
     cell: (row) => {
-      const formattedDate = new Date(
-        row.getValue("updatedAt")
-      ).toLocaleDateString();
+      const date = String(row.getValue());
+      const formattedDate = new Date(date).toLocaleDateString();
       return <div className="font-medium">{formattedDate}</div>;
     },
   },
