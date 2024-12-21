@@ -26,7 +26,7 @@ We need to install or make sure that these tools are pre-installed on your machi
 Clone the project
 
 ```bash
- https://github.com/abdifitahabdulkadir/usermanagement.git
+git clone https://github.com/abdifitahabdulkadir/usermanagement.git
 ```
 
 Go to the project directory
