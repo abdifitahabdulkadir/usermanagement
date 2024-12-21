@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen flex flex-col items-center justify-center">
-      <h1 className=" text-2xl md:text-3xl font-bold capitalize">
+    <main className="w-full px-5 md:px-10 h-screen flex flex-col items-center justify-center">
+      <h1 className=" text-2xl md:text-3xl text-center font-bold capitalize">
         Welcome to management user table
       </h1>
       <Image
