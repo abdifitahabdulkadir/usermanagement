@@ -8,9 +8,7 @@ import { columns, Users } from "./columns";
 
 async function getUsersData(): Promise<Users[]> {
   try {
-    const users = await fetch(
-      "https://run.mocky.io/v3/35a0bf57-fca7-4d61-9a9b-11d3bc73a6c4"
-    );
+    const users = await fetch("https://jsonplaceholder.typicode.com/users");
     const decoded = await users.json();
     decoded.lastSeen = true;
     return decoded;
